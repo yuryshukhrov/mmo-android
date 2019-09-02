@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:components="http://schemas.android.com/apk/res/com.yuri.game"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+
+    <!-- Left Block -->
+
+    <RelativeLayout
+        android:id="@+id/left_block"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".60">
+
+        <ImageView
+            android:id="@+id/iv_player_state"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_above="@+id/tv_name_and_level"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+             android:layout_marginTop="20dp"
+            android:src="@drawable/online" />
+
+        <TextView
+            android:id="@+id/tv_name_and_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/player_hp_bar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:text="Name [level]"
+            android:textSize="22sp" />
+
+        <com.yuri.game.HpBar
+            android:id="@+id/player_hp_bar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="300dp"
+            android:layout_height="15dp"
+            android:layout_above="@+id/player_char_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:max="100"
+            android:maxHeight="20dp"
+            android:minHeight="20dp"
+            android:progress="100"
+            android:progressDrawable="@drawable/progressbar"
+            components:text="[64/64]"
+            components:textColor="@android:color/black"
+            components:textSize="14sp" />
+
+        <ImageButton
+            android:id="@+id/head_armor_slot"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignTop="@+id/player_char_image"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@+id/player_char_image"
+            android:background="@drawable/super_frame" />
+        
+        <TextView 
+            android:id="@+id/tv_helmet"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_alignTop="@+id/player_char_image"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@+id/player_char_image"
+            android:background="@drawable/helmet" />
+
+        <ImageButton
+            android:id="@+id/chest_armor_slot"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/head_armor_slot"
+            android:layout_marginBottom="20dp"
+            android:layout_toLeftOf="@+id/player_char_image"
+            android:background="@drawable/super_frame" />
+        
+        <TextView 
+           android:id="@+id/chest"
+            android:layout_width="90dp"
+            android:layout_height="85dp"
+            android:layout_below="@+id/head_armor_slot"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/player_char_image"
+            android:background="@drawable/chest" />
+
+        <ImageButton
+            android:id="@+id/wrist_armor_slot"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/chest_armor_slot"
+            android:layout_marginLeft="20dp"
+            android:layout_toLeftOf="@+id/player_char_image"
+            android:background="@drawable/super_frame" />
+        
+        <TextView 
+           android:id="@+id/tv_wrist"
+            android:layout_width="90dp"
+            android:layout_height="85dp"
+            android:layout_below="@+id/chest_armor_slot"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/player_char_image"
+            android:background="@drawable/bracer" />
+
+        <ImageButton
+            android:id="@+id/hands_armor_slot"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignTop="@+id/player_char_image"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/player_char_image"
+            android:background="@drawable/super_frame" />
+        
+        <TextView 
+          android:id="@+id/tv_waist"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_alignTop="@+id/player_char_image"
+             android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/player_char_image"
+            android:background="@drawable/belt" />
+
+        <ImageButton
+            android:id="@+id/waist_armor_slot"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/hands_armor_slot"
+            android:layout_marginBottom="20dp"
+            android:layout_toRightOf="@+id/player_char_image"
+            android:background="@drawable/super_frame" />
+        
+        <TextView 
+           android:id="@+id/tv_legs"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/hands_armor_slot"
+            android:layout_marginBottom="20dp"
+            android:layout_toRightOf="@+id/player_char_image"
+            android:background="@drawable/legs" />
+
+        <ImageButton
+            android:id="@+id/legs_armor_slot"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/waist_armor_slot"
+            android:layout_marginBottom="20dp"
+            android:layout_toRightOf="@+id/player_char_image"
+            android:background="@drawable/super_frame" />
+        
+         <TextView 
+           android:id="@+id/tv_boots"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/waist_armor_slot"
+            android:layout_marginBottom="20dp"
+            android:layout_toRightOf="@+id/player_char_image"
+            android:background="@drawable/boots" />
+
+        <ImageButton
+            android:id="@+id/weapon_slot"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignLeft="@+id/player_char_image"
+            android:layout_below="@+id/player_char_image"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/super_frame" />
+        
+        <TextView 
+           android:id="@+id/tv_weapon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignLeft="@+id/player_char_image"
+            android:layout_below="@+id/player_char_image"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/sword" />
+
+        <ImageButton
+            android:id="@+id/shield_slot"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/player_char_image"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/weapon_slot"
+            android:background="@drawable/super_frame" />
+        
+        <TextView 
+           android:id="@+id/tv_shield"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/player_char_image"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/weapon_slot"
+            android:background="@drawable/shield" />
+
+        <ImageView
+            android:id="@+id/player_char_image"
+            android:layout_width="300dp"
+            android:layout_height="400dp"
+            android:layout_centerInParent="true"
+            android:contentDescription="bla"
+            android:src="@drawable/undead_female" />
+    </RelativeLayout>
+
+    <!-- Left Block End -->
+
+
+    <!-- Right Block -->
+
+    <RelativeLayout
+        android:id="@+id/right_block"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".40">
+
+        <TextView
+            android:id="@+id/tv_general_stats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="General Stats"
+            android:textColor="@color/Red"
+            android:background="@drawable/stats_frame"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        
+        <TextView
+            android:id="@+id/tv_location_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_general_stats"
+            android:layout_alignTop="@+id/tv_general_stats"
+            android:layout_marginLeft="50dp"
+            android:text="Location: Training Room"
+            android:textColor="@color/DarkViolet"
+            android:background="@drawable/stats_frame"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_strength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_general_stats"
+            android:layout_marginTop="10dp"
+            android:text="Strength: " />
+
+        <TextView
+            android:id="@+id/tv_agility"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_strength"
+            android:layout_marginTop="10dp"
+            android:text="Agility: " />
+
+        <TextView
+            android:id="@+id/tv_luck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_agility"
+            android:layout_marginTop="10dp"
+            android:text="Luck: " />
+
+        <TextView
+            android:id="@+id/tv_toughness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_luck"
+            android:layout_marginTop="10dp"
+            android:text="Toughness: " />
+        
+        <TextView
+            android:id="@+id/tv_damage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_toughness"
+            android:layout_marginTop="10dp"
+            android:text="Damage: " />
+
+        <TextView
+            android:id="@+id/tv_battle_stats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_damage"
+            android:layout_marginTop="20dp"
+            android:text="Battle Stats"
+             android:padding="10dp"
+            android:textColor="@color/Blue"
+            android:background="@drawable/stats_frame"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_critical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_battle_stats"
+            android:layout_marginTop="10dp"
+            android:text="Critical: " />
+
+        <TextView
+            android:id="@+id/tv_anticritical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_critical"
+            android:layout_marginTop="10dp"
+            android:text="Anticritical: " />
+
+        <TextView
+            android:id="@+id/tv_dodge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_anticritical"
+            android:layout_marginTop="10dp"
+            android:text="Dodge: " />
+
+        <TextView
+            android:id="@+id/tv_antidodge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_dodge"
+            android:layout_marginTop="10dp"
+            android:text="Antidodge: " />
+
+        <TextView
+            android:id="@+id/tv_armor_stats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_antidodge"
+            android:background="@drawable/stats_frame"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Armor Stats"
+            android:textColor="@color/Green"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_head_armor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_armor_stats"
+            android:layout_marginTop="10dp"
+            android:text="Head Armor: " />
+
+        <TextView
+            android:id="@+id/tv_chest_armor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_head_armor"
+            android:layout_marginTop="10dp"
+            android:text="Chest Armor: " />
+
+        <TextView
+            android:id="@+id/tv_abdomen_armor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_chest_armor"
+            android:layout_marginTop="10dp"
+            android:text="Abdomen Armor: " />
+
+        <TextView
+            android:id="@+id/tv_leg_armor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_abdomen_armor"
+            android:layout_marginTop="10dp"
+            android:text="Leg Armor: " />
+    </RelativeLayout>
+    <!-- Right Block End -->
+
+</LinearLayout>

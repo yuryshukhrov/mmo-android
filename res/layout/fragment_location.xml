@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/left_block"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.25"
+        android:background="@drawable/img_fantasy_frame" >
+        
+        <ImageView android:id="@+id/iv_locations_heading"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:src="@drawable/img_locations"
+            />
+
+        <ListView
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/iv_locations_heading"
+            android:id="@+id/lv_locations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/middle_block"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.50" 
+        android:background="@drawable/img_fantasy_frame">
+
+        <FrameLayout
+            android:id="@+id/middle_fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/right_block"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.25"
+        android:background="@drawable/img_fantasy_frame">
+
+        <ImageView
+            android:id="@+id/iv_players_heading"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/img_players" />
+
+        <HorizontalScrollView 
+            android:id="@+id/right_block_scroller" 
+            android:layout_below="@+id/iv_players_heading"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <ListView
+                android:id="@+id/lv_players"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:layout_centerHorizontal="true"/>
+        </HorizontalScrollView>
+    </RelativeLayout>
+</LinearLayout>

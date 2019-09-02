@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item 
+        android:id="@+id/action_jump_to_fight"
+        android:title="Jump to Fight"
+        android:icon="@+drawable/ic_go_to_fight"
+        android:showAsAction="ifRoom|withText" />
+    
+</menu>

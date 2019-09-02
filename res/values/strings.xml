@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MMORPG Game</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="e_mail">E-mail</string>
+    <string name="new_register_text">New to Game? Register here</string>
+    <string name="recover_text">Forgot password? Recover here</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="register">Register</string>
+    <string name="have_account">Already have account! Login here</string>
+    <string name="new_account">Register New Account</string>
+    <string name="title_activity_select_character">Chose Your Character</string>
+    <string name="select_char">Select Character</string>
+    <string name="prompt_login">Login</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in_register"><b>Sign in</b> or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="action_forgot_password">Recover lost password</string>
+    <string name="login_progress_signing_in">Authenticating . . .</string>
+    <string name="trying_to_register">Registering . . .</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_registration">RegistrationActivity</string>
+    <string name="username_exists">Username exists!</string>
+    <string name="email_exists">Email exists!</string>
+    <string name="title_activity_char_selection">CharSelectionActivity</string>
+    <string name="system_error_message">System Error Message</string>
+    <string name="wrong_request_structure">Wrong Request Structure</string>
+    <string name="wrong_command_order">Wrong Command Order</string>
+    <string name="params_are_missing">Parameters Are Missing</string>
+    <string name="param_not_found">Parameter Is Not Found</string>
+    <string name="socket_is_closed_by_server">Socket Was Closed By Server</string>
+    <string name="imageViewDescription"></string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_section1">Class Elf</string>
+    <string name="title_section2">Class Orc</string>
+    <string name="title_section3">Class Undead</string>
+    <string name="title_section4">Class Gnome</string>
+    <string name="gender">Gender</string>
+    <string name="elf_race_desc">Elves are a tall and beautiful race coming from the southern forests of the known lands. They are skilled agile swordsmen and archers, adept in offensive and deceive magic. As long as their race started accepting the human culture more and more, they prefer to settle in human cities where they can trade freely and prosper. Nevertheless, elves are very selfish and proud of their southern origin. Even though elves have not participated in any conflicts recently, they are often hired as bodyguards by noblemen.</string>
+    <string name="human_race_desc">Humans are the original race settled in the kingdom. Most of them are farmers and peaceful laborers. However, some of humans become proficient knights defending the king himself, graceful and courageously. Since the war with the orcs broke down, humans have been in constant battles, and a lot of strong warriors appeared. This race possesses strength and very helpful in team fights. Humans are a very well-balanced race.</string>
+    <string name="orc_race_desc">Orcs came from the east lands of the kingdom around one thousand years ago. They are a very aggressive and strong race, skilled on close combat and defensive skills. Led by great kings of the past, orcs defended unskilled humans for hundreds of years conquering more and more territory. However, they were not able to defeat humans and had to write a peace treaty. Now orcs are frequent guests at large cities, especially in pubs. Many orcs who abandoned their lands serve the human king.</string>
+    <string name="undead_race_desc">The undead are creatures which appeared recently in the lands of the kingdom. No one knows where their place of origin is, or what they really are. Led by malicious wizards of the undead, they conquered most of the northern land, driving humans away. The undead are skilled in black magic and possess unique abilities, which other races cannot grasp. Some of them are sometimes seen in the capital of the kingdom. It is rumored that some undead warriors are trained by humans and serve the king as a secret weapon.</string>
+
+    <string-array name="gender_type">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string name="title_activity_player_stats">PlayerStatsActivity</string>
+    <string name="failed_to_open_socket">Cannot connect to server!</string>
+    <string name="loren_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi laoreet urna ut ante pellentesque, faucibus vulputate turpis egestas. Praesent iaculis pretium accumsan. Vivamus congue elementum semper. Pellentesque gravida lectus sit amet nunc fringilla, pharetra volutpat quam placerat. Suspendisse bibendum lorem vel tortor dapibus, non posuere ipsum tincidunt. Fusce nibh nunc, bibendum non dui at, feugiat tincidunt urna. Aliquam erat volutpat. In mattis vitae justo tristique vulputate. Donec viverra, sapien in mattis vestibulum, velit ligula fringilla sapien, id ultricies mauris orci sit amet leo. Duis bibendum odio a lectus aliquet dictum.</string>
+    <string name="title_activity_request_former_test">RequestFormerTestActivity</string>
+    <string name="attack_icon_desc">Attack</string>
+    <string name="attack_text">Attack</string>
+    <string name="block_text">Block</string>
+    <string name="head_attack">Head Attack</string>
+    <string name="body_attack">Chest Attack</string>
+    <string name="abdomen_attack">Abdomen Attack</string>
+    <string name="leg_attack">Leg Attack</string>
+    <string name="head_block">Head Block</string>
+    <string name="body_block">Chest Block</string>
+    <string name="abdomen_block">Abdomen Block</string>
+    <string name="leg_block">Leg Block</string>
+    <string name="title_activity_fight">FightActivity</string>
+
+</resources>

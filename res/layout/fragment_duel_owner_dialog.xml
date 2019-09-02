@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:components="http://schemas.android.com/apk/res/com.yuri.game"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_frame"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_block"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_duel_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/stats_frame"
+            android:padding="10dp"
+            android:text="Duel Request Information"
+            android:textColor="@color/Red"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_duel_timeout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_duel_info"
+            android:layout_below="@+id/tv_duel_info"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Timeout:"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_duel_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_duel_info"
+            android:layout_below="@+id/tv_duel_timeout"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Duration: "
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_duel_owner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_duel_info"
+            android:layout_below="@+id/tv_duel_duration"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Owner: "
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_block"
+        android:layout_width="match_parent"
+        android:layout_height="700dp">
+
+        <ImageView
+            android:id="@+id/iv_player_state"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/online" />
+   
+        <com.yuri.game.HpBar
+            android:id="@+id/player_hp_bar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="200dp"
+            android:layout_height="15dp"
+            android:layout_below="@+id/iv_player_state"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:max="100"
+            android:maxHeight="20dp"
+            android:minHeight="20dp"
+            android:progress="100"
+            android:progressDrawable="@drawable/progressbar"
+            components:text="[64/64]"
+            components:textColor="@android:color/black"
+            components:textSize="14sp" />
+
+        <ImageButton
+            android:id="@+id/head_armor_slot"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignTop="@+id/player_char_image"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@+id/player_char_image"
+            android:background="@drawable/super_frame" />
+        
+        <TextView 
+            android:id="@+id/tv_helmet"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_alignTop="@+id/player_char_image"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@+id/player_char_image"
+            android:background="@drawable/helmet" />
+
+        <ImageButton
+            android:id="@+id/chest_armor_slot"
+           android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/head_armor_slot"
+            android:layout_marginBottom="20dp"
+            android:layout_toLeftOf="@+id/player_char_image"
+            android:background="@drawable/super_frame" />
+        
+        <TextView 
+           android:id="@+id/chest"
+            android:layout_width="60dp"
+            android:layout_height="55dp"
+            android:layout_below="@+id/head_armor_slot"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/player_char_image"
+            android:background="@drawable/chest" />
+
+        <ImageButton
+            android:id="@+id/wrist_armor_slot"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/chest_armor_slot"
+            android:layout_marginLeft="20dp"
+            android:layout_toLeftOf="@+id/player_char_image"
+            android:background="@drawable/super_frame" />
+        
+        <TextView 
+           android:id="@+id/tv_wrist"
+            android:layout_width="60dp"
+            android:layout_height="55dp"
+            android:layout_below="@+id/chest_armor_slot"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/player_char_image"
+            android:background="@drawable/bracer" />
+
+        <ImageButton
+            android:id="@+id/hands_armor_slot"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignTop="@+id/player_char_image"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/player_char_image"
+            android:background="@drawable/super_frame" />
+        
+         <TextView 
+           android:id="@+id/tv_legs"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/hands_armor_slot"
+            android:layout_marginBottom="20dp"
+            android:layout_toRightOf="@+id/player_char_image"
+            android:background="@drawable/legs" />
+        
+         <TextView 
+          android:id="@+id/tv_waist"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignTop="@+id/player_char_image"
+             android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/player_char_image"
+            android:background="@drawable/belt" />
+
+        <ImageButton
+            android:id="@+id/waist_armor_slot"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/hands_armor_slot"
+            android:layout_marginBottom="20dp"
+            android:layout_toRightOf="@+id/player_char_image"
+            android:background="@drawable/super_frame" />
+
+        <ImageButton
+            android:id="@+id/legs_armor_slot"
+          android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/waist_armor_slot"
+            android:layout_marginBottom="20dp"
+            android:layout_toRightOf="@+id/player_char_image"
+            android:background="@drawable/super_frame" />
+        
+        <TextView 
+           android:id="@+id/tv_boots"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/waist_armor_slot"
+            android:layout_marginBottom="20dp"
+            android:layout_toRightOf="@+id/player_char_image"
+            android:background="@drawable/boots" />
+
+        <ImageButton
+            android:id="@+id/weapon_slot"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignLeft="@+id/player_char_image"
+            android:layout_below="@+id/player_char_image"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/super_frame" />
+        
+        <TextView 
+           android:id="@+id/tv_weapon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignLeft="@+id/player_char_image"
+            android:layout_below="@+id/player_char_image"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/sword" />
+
+        <ImageButton
+            android:id="@+id/shield_slot"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/player_char_image"
+            android:layout_marginLeft="20dp"
+             android:layout_marginBottom="20dp"
+            android:layout_toRightOf="@+id/weapon_slot"
+            android:background="@drawable/super_frame" />
+        
+        <TextView 
+           android:id="@+id/tv_shield"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/player_char_image"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/weapon_slot"
+            android:background="@drawable/shield" />
+
+        <ImageView
+            android:id="@+id/player_char_image"
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/player_hp_bar"
+            android:contentDescription="bla"
+            android:src="@drawable/undead_female" />
+    </RelativeLayout>
+
+</LinearLayout>
